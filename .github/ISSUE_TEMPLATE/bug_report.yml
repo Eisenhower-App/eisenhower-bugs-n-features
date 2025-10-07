@@ -48,12 +48,19 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: version
     attributes:
       label: Eisenhower Version
-      description: What version of Eisenhower are you using?
-      placeholder: e.g., v1.0.22 (check About menu)
+      description: What version of Eisenhower are you using? (Check "About Eisenhower" in the menu)
+      options:
+        - v1.0.22
+        - v1.0.21
+        - v1.0.20
+        - v1.0.19
+        - v1.0.18
+        - Older version
+        - Unknown
     validations:
       required: true
 
